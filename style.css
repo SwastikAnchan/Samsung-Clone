@@ -1,0 +1,54 @@
+ /* Custom animations for captions */
+ .carousel-caption h4 {
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.carousel-caption p {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+.carousel-caption {
+    text-align: left;
+}
+
+.carousel-caption h4,
+.carousel-caption p {
+    margin: 0; /* Optional: Remove default margins */
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    margin-top: 0; /* Adjusts the margin to prevent gaps */
+}
